@@ -845,22 +845,17 @@ section {
 /*--------------------------------------------------------------
 # program
 --------------------------------------------------------------*/
-.artikel {
-  background-color: #3071a9;
-}
 
-<<<<<<< HEAD
-#packageContainer {
+HEAD #packageContainer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  grid-template-rows: repeat(2,minmax(0,1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
-
 
 .package-card {
   border-radius: 12px;
-  display: flex!important;
+  display: flex !important;
   flex-direction: column;
   flex-grow: 2;
   min-height: 300px;
@@ -870,10 +865,9 @@ section {
 }
 
 .package-card.other {
-  background: linear-gradient(224.06deg,#8ec8f8 1.12%,#def3f5 98.65%);
+  background: linear-gradient(224.06deg, #8ec8f8 1.12%, #def3f5 98.65%);
   padding: 40px 0 0 10px;
 }
-
 
 .package-product-label p {
   font-family: Inter;
@@ -900,7 +894,7 @@ section {
 }
 
 .package-card .package-card-top {
-  height: 350px
+  height: 350px;
 }
 
 .package-card-bottom {
@@ -927,7 +921,7 @@ section {
   padding: 0;
 }
 
-#package-productReviews>li {
+#package-productReviews > li {
   display: flex;
   gap: 6px;
 }
@@ -944,7 +938,7 @@ section {
   width: 22px;
 }
 
-#package-productReviews>li>p {
+#package-productReviews > li > p {
   color: #2c313a;
   font-size: 18px;
   font-style: normal;
@@ -979,7 +973,6 @@ section {
   padding: 2px;
 }
 
-
 .package-price-information-bottom {
   align-items: center;
   color: #000000;
@@ -990,7 +983,6 @@ section {
   font-weight: 600;
   line-height: 18px;
 }
-
 
 .btn-package {
   background: #2d2d33;
@@ -1005,8 +997,10 @@ section {
   text-align: center;
 }
 
-.btn-package:active,.btn-package:focus,.btn-package:hover {
-  opacity: .9;
+.btn-package:active,
+.btn-package:focus,
+.btn-package:hover {
+  opacity: 0.9;
 }
 
 .btn-link {
@@ -1021,73 +1015,74 @@ section {
   gap: 8px;
   justify-content: center;
   line-height: 24px;
-  padding: .5rem;
+  padding: 0.5rem;
   text-align: center;
 }
 
-.btn-link:active,.btn-link:focus,.btn-link:hover {
-  opacity: .9;
+.btn-link:active,
+.btn-link:focus,
+.btn-link:hover {
+  opacity: 0.9;
 }
 
 @media (min-width: 1200px) {
   h2.title-package {
-      font-size:24px;
-      line-height: 36px;
+    font-size: 24px;
+    line-height: 36px;
   }
 
   .section-packages {
-      padding-bottom: 2rem;
+    padding-bottom: 2rem;
   }
 
   #packagesContainer {
-      overflow-x: scroll;
+    overflow-x: scroll;
   }
   .package-card {
-      border-radius: 12px;
-      flex-grow: 1;
-      height: 100%;
-      max-width: 350px;
-      min-height: 300px;
-      min-width: 218px;
-      position: relative;
+    border-radius: 12px;
+    flex-grow: 1;
+    height: 100%;
+    max-width: 350px;
+    min-height: 300px;
+    min-width: 218px;
+    position: relative;
   }
 
   .package-card.other {
-      flex-grow: 1;
-      height: auto;
-      padding: 80px 0 0 24px;
+    flex-grow: 1;
+    height: auto;
+    padding: 80px 0 0 24px;
   }
 
   .package-card-top {
-      height: 350px;
+    height: 350px;
   }
 
   .package-other-title {
-      font-size: 20px;
-      max-width: 134px;
+    font-size: 20px;
+    max-width: 134px;
   }
   .package-product-label p {
-      font-size: 20px;
+    font-size: 20px;
   }
-
 
   #package-productReviews {
-      gap: 8px;
-      min-height: 136px;
+    gap: 8px;
+    min-height: 136px;
   }
 
-  #package-productReviews>li>p {
-      font-size: 18px;
-      line-height: 22px;
+  #package-productReviews > li > p {
+    font-size: 18px;
+    line-height: 22px;
   }
 
   .package-price-information-top {
-      font-size: 12px;
-      line-height: 20px
+    font-size: 12px;
+    line-height: 20px;
   }
 
   .package-preview-icon img {
-      margin-top: 4px
+    margin-top: 4px;
   }
 }
 
@@ -1101,30 +1096,19 @@ section {
   border-style: solid;
   border-width: 10px;
   height: 50px;
-  width: 50px
+  width: 50px;
 }
 
-
-.active-btn-grade,.active-btn-level {
-  background: #e0eefa!important;
-  border: 1px solid #1480d8!important;
-  color: #1480d8!important
+.active-btn-grade,
+.active-btn-level {
+  background: #e0eefa !important;
+  border: 1px solid #1480d8 !important;
+  color: #1480d8 !important;
 }
-
 
 /*--------------------------------------------------------------
 # artikel
 --------------------------------------------------------------*/
-=======
-.artikel .container-fluid {
-  background-color: #394047;
-}
-
-.artikel .seni-item {
-  background-color: #18d26e;
-  width: 100%;
-}
->>>>>>> 8242d68fbd02f2a4a31c4d2c52f0560083099415
 
 /*--------------------------------------------------------------
 # Team
@@ -1197,12 +1181,7 @@ section {
 }
 
 .team .member:hover .member-info {
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.9) 0%,
-    rgba(0, 0, 0, 0.8) 20%,
-    rgba(0, 212, 255, 0) 100%
-  );
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 212, 255, 0) 100%);
   opacity: 1;
   transition: 0.4s;
 }
