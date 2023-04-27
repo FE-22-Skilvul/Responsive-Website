@@ -186,6 +186,13 @@ h6 {
   margin-left: 5px;
 }
 
+.navbar a #profile,
+.navbar a:focus i {
+  font-size: 25px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
@@ -370,19 +377,19 @@ h6 {
   display: block;
 }
 
-#navbar ul li .btn-get-started {
+/* #navbar ul li .btn-get-started {
   font-family: "Raleway", sans-serif;
   background-color: #d05d5d;
   padding: 20px;
   margin: 0 20px;
   border-radius: 10px;
   height: 30px;
-}
+} */
 
-#navbar ul li .btn-get-started:hover {
+/* #navbar ul li .btn-get-started:hover {
   background: #924444;
   color: #fff;
-}
+} */
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -985,7 +992,7 @@ HEAD #packageContainer {
 }
 
 .btn-package {
-  background: #2d2d33;
+  background: #d05d5d;
   border: none;
   border-radius: 96px;
   color: #fff;
@@ -994,6 +1001,7 @@ HEAD #packageContainer {
   font-weight: 700;
   line-height: 24px;
   padding: 6px 12px;
+  margin: 20px 0;
   text-align: center;
 }
 
@@ -1001,6 +1009,7 @@ HEAD #packageContainer {
 .btn-package:focus,
 .btn-package:hover {
   opacity: 0.9;
+  color: white;
 }
 
 .btn-link {
