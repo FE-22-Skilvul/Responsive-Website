@@ -186,10 +186,17 @@ h6 {
   margin-left: 5px;
 }
 
+.navbar a #profile,
+.navbar a:focus i {
+  font-size: 25px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover > a {
+.navbar li:hover>a {
   color: #fff;
 }
 
@@ -226,11 +233,11 @@ h6 {
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover > a {
+.navbar .dropdown ul li:hover>a {
   color: #1d1d1d;
 }
 
-.navbar .dropdown:hover > ul {
+.navbar .dropdown:hover>ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -242,7 +249,7 @@ h6 {
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover > ul {
+.navbar .dropdown .dropdown:hover>ul {
   opacity: 1;
   top: 0;
   left: 100%;
@@ -254,7 +261,7 @@ h6 {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover > ul {
+  .navbar .dropdown .dropdown:hover>ul {
     left: -100%;
   }
 }
@@ -326,7 +333,7 @@ h6 {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover > a {
+.navbar-mobile li:hover>a {
   color: #428bca;
 }
 
@@ -362,19 +369,24 @@ h6 {
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover > a {
+.navbar-mobile .dropdown ul li:hover>a {
   color: #428bca;
 }
 
-.navbar-mobile .dropdown > .dropdown-active {
+.navbar-mobile .dropdown>.dropdown-active {
   display: block;
+}
+
+#navbar ul li .bi-search {
+  margin: 10px;
+  font-size: 18px;
 }
 
 #navbar ul li .btn-get-started {
   font-family: "Raleway", sans-serif;
   background-color: #d05d5d;
   padding: 20px;
-  margin: 0 20px;
+  margin: 0 5px;
   border-radius: 10px;
   height: 30px;
 }
@@ -383,6 +395,22 @@ h6 {
   background: #924444;
   color: #fff;
 }
+
+/* ------------------------------------------------------------
+#Login
+--------------------------------------------------------------*/
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #6a11cb;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+}
+
+
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -921,7 +949,7 @@ HEAD #packageContainer {
   padding: 0;
 }
 
-#package-productReviews > li {
+#package-productReviews>li {
   display: flex;
   gap: 6px;
 }
@@ -938,7 +966,7 @@ HEAD #packageContainer {
   width: 22px;
 }
 
-#package-productReviews > li > p {
+#package-productReviews>li>p {
   color: #2c313a;
   font-size: 18px;
   font-style: normal;
@@ -985,7 +1013,7 @@ HEAD #packageContainer {
 }
 
 .btn-package {
-  background: #2d2d33;
+  background: #d05d5d;
   border: none;
   border-radius: 96px;
   color: #fff;
@@ -994,6 +1022,7 @@ HEAD #packageContainer {
   font-weight: 700;
   line-height: 24px;
   padding: 6px 12px;
+  margin: 20px 0;
   text-align: center;
 }
 
@@ -1001,6 +1030,7 @@ HEAD #packageContainer {
 .btn-package:focus,
 .btn-package:hover {
   opacity: 0.9;
+  color: white;
 }
 
 .btn-link {
@@ -1038,6 +1068,7 @@ HEAD #packageContainer {
   #packagesContainer {
     overflow-x: scroll;
   }
+
   .package-card {
     border-radius: 12px;
     flex-grow: 1;
@@ -1062,6 +1093,7 @@ HEAD #packageContainer {
     font-size: 20px;
     max-width: 134px;
   }
+
   .package-product-label p {
     font-size: 20px;
   }
@@ -1071,7 +1103,7 @@ HEAD #packageContainer {
     min-height: 136px;
   }
 
-  #package-productReviews > li > p {
+  #package-productReviews>li>p {
     font-size: 18px;
     line-height: 22px;
   }
@@ -1199,7 +1231,7 @@ HEAD #packageContainer {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.contact .info {
+/* .contact .info {
   padding: 40px 40px;
   background: #fefefe;
   box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
@@ -1239,7 +1271,7 @@ HEAD #packageContainer {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br + br {
+.contact .php-email-form .error-message br+br {
   margin-top: 25px;
 }
 
@@ -1332,7 +1364,7 @@ HEAD #packageContainer {
   100% {
     transform: rotate(360deg);
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Breadcrumbs
@@ -1361,14 +1393,15 @@ HEAD #packageContainer {
   list-style: none;
   padding: 0 0 10px 0;
   margin: 0;
+  margin-top: 20px;
   font-size: 14px;
 }
 
-.breadcrumbs ol li + li {
+.breadcrumbs ol li+li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li + li::before {
+.breadcrumbs ol li+li::before {
   display: inline-block;
   padding-right: 10px;
   color: #505a63;
