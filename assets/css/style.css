@@ -825,6 +825,57 @@ section {
   padding: 0;
 }
 
+
+/* ------------------------------------------------------------
+#Fundamental
+--------------------------------------------------------------*/
+.fundamental .fundamental-item {
+  box-sizing: content-box;
+  padding: 10px;
+  /* box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08); */
+  position: relative;
+}
+
+.fundamental .fundamental-item .fundamental-img {
+  width: 90px;
+  border-radius: 10px;
+  /* border: 6px solid #fff; */
+  float: left;
+  margin: 0 10px 0 0;
+
+}
+
+.fundamental .fundamental-item h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #394047;
+  align-items: center;
+}
+
+.fundamental .fundamental-item a {
+  color: #394047;
+}
+
+.fundamental .fundamental-item .quote-icon-left,
+.fundamental .fundamental-item .quote-icon-right {
+  color: #b9d4ec;
+  font-size: 26px;
+}
+
+.fundamental .fundamental-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.fundamental .fundamental-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+
 /*--------------------------------------------------------------
 # pembelajaran
 --------------------------------------------------------------*/
