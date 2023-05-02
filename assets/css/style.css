@@ -196,7 +196,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
+.navbar li:hover > a {
   color: #fff;
 }
 
@@ -233,11 +233,11 @@ h6 {
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
+.navbar .dropdown ul li:hover > a {
   color: #1d1d1d;
 }
 
-.navbar .dropdown:hover>ul {
+.navbar .dropdown:hover > ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -249,7 +249,7 @@ h6 {
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover>ul {
+.navbar .dropdown .dropdown:hover > ul {
   opacity: 1;
   top: 0;
   left: 100%;
@@ -261,7 +261,7 @@ h6 {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
@@ -333,7 +333,7 @@ h6 {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover>a {
+.navbar-mobile li:hover > a {
   color: #428bca;
 }
 
@@ -369,11 +369,11 @@ h6 {
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
+.navbar-mobile .dropdown ul li:hover > a {
   color: #428bca;
 }
 
-.navbar-mobile .dropdown>.dropdown-active {
+.navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
 
@@ -947,7 +947,7 @@ HEAD #packageContainer {
   padding: 0;
 }
 
-#package-productReviews>li {
+#package-productReviews > li {
   display: flex;
   gap: 6px;
 }
@@ -964,7 +964,7 @@ HEAD #packageContainer {
   width: 22px;
 }
 
-#package-productReviews>li>p {
+#package-productReviews > li > p {
   color: #2c313a;
   font-size: 18px;
   font-style: normal;
@@ -1101,7 +1101,7 @@ HEAD #packageContainer {
     min-height: 136px;
   }
 
-  #package-productReviews>li>p {
+  #package-productReviews > li > p {
     font-size: 18px;
     line-height: 22px;
   }
@@ -1137,11 +1137,64 @@ HEAD #packageContainer {
 }
 
 /*--------------------------------------------------------------
-# artikel
+# Program Offline
 --------------------------------------------------------------*/
-/* .container-fluid-1{
-  margin-left: 40px;
-} */
+.program .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 14px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+}
+
+.program .dropdown ul li {
+  min-width: 200px;
+}
+
+.program .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: none;
+  color: #9d9d9d;
+}
+
+.program .dropdown ul a i {
+  font-size: 12px;
+}
+
+.program .dropdown ul a:hover,
+.program .dropdown ul .active:hover,
+.program .dropdown ul li:hover > a {
+  color: #1d1d1d;
+}
+
+.program .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.program .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.program .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
@@ -1298,7 +1351,6 @@ HEAD #packageContainer {
   font-weight: 600;
 }
 
-
 .breadcrumbs ol {
   display: flex;
   flex-wrap: wrap;
@@ -1309,11 +1361,11 @@ HEAD #packageContainer {
   font-size: 14px;
 }
 
-.breadcrumbs ol li+li {
+.breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li+li::before {
+.breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
   color: #505a63;
