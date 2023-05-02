@@ -846,11 +846,11 @@ section {
 }
 
 .fundamental .fundamental-item h3 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   margin: 10px 0 5px 0;
   color: #394047;
-  margin-top: 30px;
+  align-items: center;
 }
 
 .fundamental .fundamental-item a {
