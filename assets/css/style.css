@@ -386,29 +386,60 @@ h6 {
   font-family: "Raleway", sans-serif;
   background-color: #d05d5d;
   padding: 15px 20px;
-  margin: 0 10px;
+  margin: 0 5px;
   border-radius: 10px;
   height: 30px;
+  color: #fff;
 }
 
 #navbar ul li .btn-get-started:hover {
+  background: #fff;
+  color: #1d1d1d;
+}
+
+#navbar ul li .btn-daftar {
+  font-family: "Raleway", sans-serif;
+  padding: 15px 20px;
+  margin: 0 5px;
+  border: 1px solid #d05d5d;
+  border-radius: 10px;
+  background: #fffbfb;
+  height: 30px;
+  color: #1d1d1d;
+}
+
+#navbar ul li .btn-daftar:hover {
   background: #924444;
   color: #fff;
 }
 
+
 /* ------------------------------------------------------------
-#Login
+#register & login
 --------------------------------------------------------------*/
+
 .gradient-custom {
   /* fallback for old browsers */
-  background: #6a11cb;
+  background: #f3f3f3;
 
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+  background: -webkit-linear-gradient(to bottom right, rgb(68, 64, 64), rgb(37, 34, 35));
 
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+  background: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(255, 255, 255))
 }
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: .75em;
+  padding-right: .75em;
+}
+
+.card-registration .select-arrow {
+  top: 13px;
+}
+
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -825,6 +856,57 @@ section {
   padding: 0;
 }
 
+
+/* ------------------------------------------------------------
+#Fundamental
+--------------------------------------------------------------*/
+.fundamental .fundamental-item {
+  box-sizing: content-box;
+  padding: 10px;
+  /* box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08); */
+  position: relative;
+}
+
+.fundamental .fundamental-item .fundamental-img {
+  width: 90px;
+  border-radius: 10px;
+  /* border: 6px solid #fff; */
+  float: left;
+  margin: 0 10px 0 0;
+
+}
+
+.fundamental .fundamental-item h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #394047;
+  align-items: center;
+}
+
+.fundamental .fundamental-item a {
+  color: #394047;
+}
+
+.fundamental .fundamental-item .quote-icon-left,
+.fundamental .fundamental-item .quote-icon-right {
+  color: #b9d4ec;
+  font-size: 26px;
+}
+
+.fundamental .fundamental-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.fundamental .fundamental-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+
 /*--------------------------------------------------------------
 # pembelajaran
 --------------------------------------------------------------*/
@@ -1120,7 +1202,7 @@ HEAD #packageContainer {
   -webkit-animation: spin 1.5s linear infinite;
   animation: spin 1.5s linear infinite;
   border-bottom: 10px solid #f3f3f3;
-  border-color: #3498db #f3f3f3;
+  border-color: #1d1d1d #f3f3f3;
   border-radius: 50%;
   border-top: 10px solid #f3f3f3;
   border-style: solid;
@@ -1137,11 +1219,64 @@ HEAD #packageContainer {
 }
 
 /*--------------------------------------------------------------
-# artikel
+# Program Offline
 --------------------------------------------------------------*/
-/* .container-fluid-1{
-  margin-left: 40px;
-} */
+.program .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 14px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+}
+
+.program .dropdown ul li {
+  min-width: 200px;
+}
+
+.program .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: none;
+  color: #9d9d9d;
+}
+
+.program .dropdown ul a i {
+  font-size: 12px;
+}
+
+.program .dropdown ul a:hover,
+.program .dropdown ul .active:hover,
+.program .dropdown ul li:hover>a {
+  color: #1d1d1d;
+}
+
+.program .dropdown:hover>ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.program .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.program .dropdown .dropdown:hover>ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
@@ -1297,7 +1432,6 @@ HEAD #packageContainer {
   font-size: 28px;
   font-weight: 600;
 }
-
 
 .breadcrumbs ol {
   display: flex;
