@@ -91,23 +91,15 @@
         <section>
           <div class="col-lg-12 bg-secondary">
             <div class="row d-flex align-items-center">
-              <div class="col-6 text-white">
-                <h5 class="mx-5">Fundamental Seni</h5>
-                <h1 class="mx-5">Pengertian Sketsa serta Tujuan, Fungsi, Manfaat & Langkah</h1>
-                <div class="row mx-5">
-                  <p class="col-4">oleh Gamal Thabroni</p>
-                  <p class="col-2">21-12-2021</p>
-                </div>
-              </div>
-              <div class="col-6 d-flex justify-content-end">
-                <img class="img-fluid justify-content-end" src="https://i.ibb.co/sHYbhkv/bg3.png" alt="">
+              <div id="blog">
+
               </div>
             </div>
           </div>
           <div class="container">
-            <div class="col justify-content-evenly">
+            <div class="col justify-content-center">
               <div class="row">
-                <div class="col-7">
+                <div class="col-8">
                   <p class="m-4">Sketsa umumnya diketahui sebagai gambar dasar pertama yang dibuat dengan cepat untuk memulai suatu karya seni rupa seperti lukisan saja. Namun, sejatinya sketsa adalah muara ide dari berbagai karya yang umumnya memiliki media visual seperti lukisan, logo, komik, dsb.</p>
                   <p class="m-4">Secara umum pengertian sketsa adalah draf gambar kasar yang digunakan untuk mengonkretkan (merealisasikan) ide yang masih abstrak dan terjebak dalam pemikiran saja. Oleh karena itu, sketsa amatlah penting dalam dunia kreatif. Sketsa tidak melulu digunakan untuk merancang suatu media visual saja, bisa jadi suatu tata lingkungan seperti tata lingkungan dan rancangan alur pengunjung pada pameran digambarkan melalui sketsa pula.</p>
                   <p class="m-4">Jadi sebetulnya apa yang dimaksud dengan sketsa? Apakah gambar sketsa hanya terbatas pada suatu gambar rancang saja? Bagaimana langkah menggambar sketsa yang baik? Terlebih lagi, sebetulnya apa itu pengertian sketsa yang sebenarnya? Berikut adalah berbagai uraian yang akan menjawab beberapa pertanyaan tersebut.</p>
@@ -124,11 +116,33 @@
                   <p class="m-4">Sketsa adalah merupakan perpaduan dari melihat, merasakan, menghayati, berpikir, ekspresi, empati serta bersikap. Sehingga sketsa adalah kepekaan dari suatu intuisi (Effendi, 1978). Effendi (1978) juga menambahkan bahwa sketsa merupakan kedalaman jiwa seniman sebagai proses penginderaan yang totalitas dari seseorang terhadap suatu objek yang akan direkam.</p>
                   <h5 class=" fw-bold">Tujuan Sketsa</h5>
                   <p class="m-4">Tujuan utama membuat sketsa adalah untuk menghasilkan bentuk dasar objek dengan posisi, proporsi, gelap-terang, komposisi, atau kebutuhan dari karya yang sesuai dengan kebutuhan dan keinginan penciptanya, baik dalam karya seni dan desain. Melalui sketsa kita akan mampu memperhatikan bentuk umum serta bahan pada karya yang akan diciptakan. Dala m tahap menggambar sketsa, kita juga dapat lebih mengamati bentuk-bentuk utama yang mewakili objek keseluruhan, posisi, kemiringan, serta garis-garis utama objek secara proporsional.</p>
-                  <h5 class="mt-5 fw-bold">Komentar</h5>
+                  <hr>
+                  <form id="form">
+                    <h5 class="mt-5 fw-bold">Komentar</h5>
+                    <div>
+                        <label for="name">Name</label> <br>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div>
+                        <label for="email">Email</label> <br>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="message">Message</label> <br>
+                        <textarea name="textarea" id="message"></textarea>
+                    </div>
+                    <div id="button-row">
+                        <div class="button">
+                            <button type="submit" id="send">Send</button>
+                        </div>
+                    </div>
+                </form>
+                
                 </div>
                 <div class="col-4">
-                  <h4 class="p-4">Baca Artikel</h4>
-
+                  <div class="p-3 justify-content-center">
+                    <h2> Baca Artikel</h2>
+                  </div>
                 </div>
               </div>
             </div>
@@ -212,6 +226,7 @@
       </div>
     </div>
   </footer><!-- End Footer -->
+  <script src="assets/js/detail.js"></script>
 </body>
 
 </html>
