@@ -4,8 +4,8 @@ fetch(url, {
   method: 'GET'
 }).then(response => response.json())
   .then(value => {
-    for (let i = 0; i < value.length; i++) {
-      document.getElementById('blog-list').innerHTML += `<a href="${'detail_artikel.html?id=' + value[i].id}"><div class="card mb-3 text-black">
+    for (let i = 0; i < 2; i++) {
+      document.getElementById('artikel-list').innerHTML += `<a href="${'detail_artikel.html?id=' + value[i].id}"><div class="card mb-3 mx-5 text-black">
       <div class="row g-0">
         <div class="col-md-9">
           <div class="card-body">
