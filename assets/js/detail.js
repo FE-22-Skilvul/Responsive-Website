@@ -29,7 +29,7 @@ fetch(url, {
       <div class="col justify-content-center">
         <div class="row">
           <div class="col-8">
-            <p>${value.pengertian}</p>
+            <p class="mt-4">${value.pengertian}</p>
             <p>${value.artikel}</p>
             <hr>      
           </div>
@@ -40,27 +40,27 @@ fetch(url, {
             <div class="col">
               <div class="fundamental">
                 <div class="fundamental-item d-flex">
-                    <img src="${value.image}" class="fundamental-img" alt="">
+                    <img src="assets/img/fundamental/empat.jpg" class="fundamental-img" alt="">
                     <h3><a href="#!">${value.title}</a>
                     </h3>
                 </div>
                 <div class="col">
                     <div class="fundamental-item d-flex">
-                        <img src="${value.image}" class="fundamental-img"
+                        <img src="assets/img/fundamental/batik.jpg" class="fundamental-img"
                             alt="">
                         <h3><a href="#!">${value.title}</a></h3>
                     </div>
                 </div>
                 <div class="col">
                     <div class="fundamental-item d-flex">
-                        <img src="${value.image}" class="fundamental-img"
+                        <img src="assets/img/fundamental/patung.jpg" class="fundamental-img"
                             alt="">
                         <h3><a href="#!">${value.title}</a></h3>
                     </div>
                 </div>
                 <div class="col">
                     <div class="fundamental-item d-flex">
-                        <img src="${value.image}" class="fundamental-img"
+                        <img src="assets/img/fundamental/satu.jpg" class="fundamental-img"
                             alt="">
                         <h3><a href="#!">${value.title}</a></h3>
                     </div>
