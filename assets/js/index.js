@@ -14,7 +14,7 @@ fetch(url, {
               <p>${value[i].author}</p>
             </div>
             <h5 class="card-title">${value[i].title}</h5>
-            <p class="card-text">${value[i].desc1}</p>
+            <p class="card-text">${value[i].pengertian}</p>
             <p class="card-text"><small class="text-body-secondary">${value[i].date}</small></p>
           </div>
         </div>
