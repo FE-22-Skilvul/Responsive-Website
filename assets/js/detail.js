@@ -31,6 +31,10 @@ fetch(url, {
           <div class="col-8">
             <p class="mt-4">${value.pengertian}</p>
             <p>${value.artikel}</p>
+            <h5 class="fw-bold">${value.subbab1}</h5>
+            <p>${value.artikel1}</p>
+            <h5 class="fw-bold">${value.subbab2}</h5>
+            <p>${value.artikel2}</p>
             <hr>      
           </div>
           <div class="col-4">
