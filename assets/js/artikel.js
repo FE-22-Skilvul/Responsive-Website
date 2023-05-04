@@ -1,16 +1,17 @@
-const url = 'https://64513164e1f6f1bb22aab5b3.mockapi.io/artikel'
+const url = "https://64513164e1f6f1bb22aab5b3.mockapi.io/artikel";
 
 fetch(url, {
-  method: 'GET'
-}).then(response => response.json())
-  .then(value => {
+  method: "GET",
+})
+  .then((response) => response.json())
+  .then((value) => {
     for (let i = 0; i < value.length; i++) {
-      document.getElementById('blog-list').innerHTML += `<a href="${'detail_artikel.html?id=' + value[i].id}"><div class="card mb-3 text-black">
+      document.getElementById("blog-list").innerHTML += `<a href="${"detail_artikel.html?id=" + value[i].id}"><div class="card mb-3 text-black">
       <div class="row g-0">
         <div class="col-md-9">
           <div class="card-body">
             <div class="entry-meta d-flex align-items-center">
-              <p class="category me-4 mt-3">${value[i].kategori}</p>
+              <p class="category me-4">${value[i].kategori}</p>
               <p>${value[i].author}</p>
             </div>
             <h5 class="card-title">${value[i].title}</h5>
@@ -23,7 +24,7 @@ fetch(url, {
             style="width: 18em; padding: 0.5em; border-radius: 15px;">
         </div>
       </div>
-    </div></a>`
+    </div></a>`;
     }
-    console.log(value)
-  })
+    console.log(value);
+  });
