@@ -39,7 +39,7 @@ fetch(url, {
             <p>${value.artikel1}</p>
             <h5 class="fw-bold">${value.subbab2}</h5>
             <p>${value.artikel2}</p>
-            <hr>      
+            <hr>    
           </div>
 
           <div class="col-12 col-lg-3 col-xl-3 col-xxl-3">
