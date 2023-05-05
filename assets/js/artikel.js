@@ -8,7 +8,7 @@ fetch(url, {
     for (let i = 0; i < value.length; i++) {
       document.getElementById("blog-list").innerHTML += `<a href="${"detail_artikel.html?id=" + value[i].id}"><div class="card mb-3 text-black">
       <div class="row g-0">
-        <div class="col-md-9">
+        <div class="col-8 col-md-9 bg-warning">
           <div class="card-body">
             <div class="entry-meta d-flex align-items-center">
               <p class="category me-4">${value[i].kategori}</p>
@@ -19,7 +19,7 @@ fetch(url, {
             <p class="card-text"><small class="text-body-secondary">${value[i].date}</small></p>
           </div>
         </div>
-        <div class="col-md-3 d-flex justify-content-end">
+        <div class="col-4 col-md-3 d-flex justify-content-end">
           <img src="${value[i].image}" class="img-fluid rounded-start" alt="..."
             style="width: 18em; padding: 0.5em; border-radius: 15px;">
         </div>
