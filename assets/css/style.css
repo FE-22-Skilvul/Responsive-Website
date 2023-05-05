@@ -599,9 +599,9 @@ h6 {
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
-section {
-  padding: 80px 0;
-}
+/* section {
+  padding: 10px 0;
+} */
 
 .section-bg {
   background-color: #fafafb;
@@ -1466,12 +1466,12 @@ HEAD #packageContainer {
   padding: 15px 0;
   background: #f7f8f8;
   min-height: 40px;
-  margin-top: 70px;
+  margin-top: 80px;
 }
 
 @media (max-width: 992px) {
   .breadcrumbs {
-    margin-top: 58px;
+    margin-top: 60px;
   }
 }
 
