@@ -386,7 +386,8 @@ h6 {
   font-family: "Raleway", sans-serif;
   background-color: #d05d5d;
   padding: 15px 20px;
-  margin: 0 5px;
+  margin: 5px 15px;
+  border: 1px solid #d05d5d;
   border-radius: 10px;
   height: 30px;
   color: #fff;
@@ -395,12 +396,13 @@ h6 {
 #navbar ul li .btn-get-started:hover {
   background: #fff;
   color: #1d1d1d;
+  border: 1px solid #d05d5d;
 }
 
 #navbar ul li .btn-daftar {
   font-family: "Raleway", sans-serif;
   padding: 15px 20px;
-  margin: 0 5px;
+  margin: 5px 15px;
   border: 1px solid #d05d5d;
   border-radius: 10px;
   background: #fffbfb;
@@ -597,9 +599,9 @@ h6 {
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
-section {
-  padding: 80px 0;
-}
+/* section {
+  padding: 10px 0;
+} */
 
 .section-bg {
   background-color: #fafafb;
@@ -798,10 +800,11 @@ section {
 
 .seni .seni-item {
   box-sizing: content-box;
-  padding: 40px;
+  padding: 1rem;
   /* box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08); */
   position: relative;
   background: #fff;
+  height: 20%;
 }
 
 .seni .seni-item .seni-img {
@@ -897,6 +900,54 @@ section {
 }
 
 .fundamental .fundamental-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+/* ------------------------------------------------------------
+#referensi
+--------------------------------------------------------------*/
+.referensi .referensi-item {
+  box-sizing: content-box;
+  padding: 10px;
+  /* box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08); */
+  position: relative;
+}
+
+.referensi .referensi-item .referensi-img {
+  width: 180px;
+  border-radius: 4px;
+  /* border: 6px solid #fff; */
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.referensi .referensi-item h3 {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #394047;
+  align-items: center;
+}
+
+.referensi .referensi-item a {
+  color: #394047;
+}
+
+.referensi .referensi-item .quote-icon-left,
+.referensi .referensi-item .quote-icon-right {
+  color: #b9d4ec;
+  font-size: 26px;
+}
+
+.referensi .referensi-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.referensi .referensi-item .quote-icon-right {
   display: inline-block;
   right: -5px;
   position: relative;
@@ -1415,12 +1466,12 @@ HEAD #packageContainer {
   padding: 15px 0;
   background: #f7f8f8;
   min-height: 40px;
-  margin-top: 70px;
+  margin-top: 80px;
 }
 
 @media (max-width: 992px) {
   .breadcrumbs {
-    margin-top: 58px;
+    margin-top: 60px;
   }
 }
 
@@ -1449,61 +1500,6 @@ HEAD #packageContainer {
   color: #505a63;
   content: "/";
 }
-
-/* 
-form {
-  width: 450px;
-  height: 400px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-form h1 {
-  color: #fff;
-  text-align: center;
-  font-size: 22px;
-}
-
-label {
-  color: #444444;
-  font-weight: bold;
-  padding-bottom: 5px;
-  padding-top: 15px;
-  display: inline-block;
-}
-
-input,textarea {
-  box-sizing: border-box;
-  width: 400px;
-  height: 30px;
-  padding: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  outline: none;
-  resize: none;
-}
-
-textarea {
-  height: 70px;
-}
-
-#button-row {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-button {
-  flex-grow: 1;
-  width: 125px;
-  border: none;
-  outline: none;
-  border-radius: 10px;
-  height: 35px;
-  cursor: pointer;
-  color: #fff;
-}
-
-button#send {
-  background: #ff0057;
-} */
 
 /*--------------------------------------------------------------
 # Footer
