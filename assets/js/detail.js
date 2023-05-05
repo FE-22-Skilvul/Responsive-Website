@@ -9,26 +9,30 @@ fetch(url, {
 })
   .then((response) => response.json())
   .then((value) => {
-    document.getElementById("blog").innerHTML += 
-    `<div class="col-lg-12 bg-dark">
-      <div class="row d-flex align-items-center">
-        <div class="col-6 text-white">
-          <h5 class="mx-5">${value.kategori}</h5>
-          <h1 class="mx-5">${value.title}</h1>
-          <div class="row mx-5">
-            <p class="col-4">oleh ${value.author}</p>
-            <p class="col-2">${value.date}</p>
+    document.getElementById("blog").innerHTML += `
+    <div class="row justify-content-center">
+      <div class="col-12 bg-dark d-flex justify-content-center">
+        <div class="col-11">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-7 col-lg-9 col-xl-9 col-xxl-8 text-white">
+              <h5 class="pt-3">${value.kategori}</h5>
+              <h1>${value.title}</h1>
+              <div class="col d-flex">
+                <p class="ps-1">oleh ${value.author} </p>
+                <p class="ps-3"> ${value.date}</p>
+              </div>
+            </div>
+
+            <div class="col-4 col-lg-3 col-xl-3 col-xxl-4 d-flex justify-content-end">
+              <img class="img-fluid" src="${value.image}" alt="">
+            </div>
           </div>
         </div>
-        <div class="col-6 d-flex justify-content-end">
-          <img class="img-fluid" src="${value.image}" alt="">
-        </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="col justify-content-center">
-        <div class="row">
-          <div class="col-8">
+      
+      <div class="col-10 col-lg-11">
+        <div class="row justify-content-center">
+          <div class=" col-md-12 col-lg-9 col-xl-9 col-xxl-9">
             <p class="mt-4">${value.pengertian}</p>
             <p>${value.artikel}</p>
             <h5 class="fw-bold">${value.subbab1}</h5>
@@ -37,9 +41,10 @@ fetch(url, {
             <p>${value.artikel2}</p>
             <hr>      
           </div>
-          <div class="col-4">
+
+          <div class="col-12 col-lg-3 col-xl-3 col-xxl-3">
             <div class="p-3 justify-content-center">
-              <h2> Baca Artikel</h2>
+              <h4 class="pt-3">Baca Artikel</h4>
             </div>
             <div class="col">
               <div class="fundamental">
@@ -74,6 +79,8 @@ fetch(url, {
           </div>
         </div>
       </div>
+      
+        
     </div>`;
     console.log(value);
   });
