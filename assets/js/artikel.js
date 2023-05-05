@@ -8,7 +8,7 @@ fetch(url, {
     for (let i = 0; i < value.length; i++) {
       document.getElementById("blog-list").innerHTML += `<a href="${"detail_artikel.html?id=" + value[i].id}"><div class="card mb-3 text-black">
       <div class="row g-0">
-        <div class="col-8 col-md-9 bg-warning">
+        <div class="col-8 col-md-9">
           <div class="card-body">
             <div class="entry-meta d-flex align-items-center">
               <p class="category me-4">${value[i].kategori}</p>
