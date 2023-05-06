@@ -21,7 +21,7 @@ fetch(url, {
         </div>
         <div class="col-12 col-md-3 d-flex justify-content-center">
           <img src="${value[i].image}" class="img-fluid rounded-start" alt="..."
-            style="width: 18em; padding: 0.5em; border-radius: 15px;">
+            style="width: 100%; padding: 0.5em; border-radius: 15px;">
         </div>
       </div>
     </div></a>`;
